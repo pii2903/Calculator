@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?font-family=Poopins');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Poopins;
+}
+body{
+    background-color: #a3d8fe;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+.header h1{
+    font-size: 100px;
+    font-weight: 2000;
+    background-image: url('text1.jpg');
+    background-size: cover ;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.calculator{
+    width:300px;
+    height:410px;
+    background:white;
+    margin:30px auto;
+    border-radius:8px;
+    box-shadow:1px 1px 10px #017AFD;
+    padding:20px;
+}
+.calculator .parent{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    padding-bottom:20px;
+}
+.calculator .screen{
+    width:100%;
+    height:100px;
+    border-radius: 8px;
+    background:#A3D8FE;
+
+}
+.screen  .exprssion{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: right;
+    pointer-events: none;
+}
+.calculator .operation{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.operation .btn{
+    background: rbg(203,202,202);
+    width:50px;
+    height:50px;
+    font-size:16px;
+    font-weight:550;
+    outline:none;
+    border:none;
+    border-radius:50%;
+    box-shadow: 1px 1px 10px #017AFD;
+}
+.operation.btn,.task,.clear,.equal:hover{
+    cursor: pointer;
+}
+.operation.task{
+    background: #0FCAF7;
+    color: white;
+    width:50px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 650;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px gray;
+}
+.operation .clear{
+    background:green;
+    color:white;
+    width:50px;
+    height:50px;
+    font-size:16px;
+    font-weight:650;
+    outline:none;
+    border:none;
+    border-radius:50%;
+    box-shadow: 1px 1px 10px gray;
+}
+.operation .equal{
+    background:green;
+    color:white;
+    width:50px;
+    height:50px;
+    font-size:16;
+    font-weight:650;
+    outline:none;
+    border:none;
+    border-radius:50%;
+    box-shadow: 1px 1px 10px gray;
+}
